@@ -1,0 +1,11 @@
+credentials/**/*.ts
+nodes/**/*.ts
+!*.d.ts
+
+tsconfig.json
+tslint.json
+gulpfile.js
+
+*.log
+.DS_Store
+node_modules/
