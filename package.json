@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-odbc-database",
+  "name": "n8n-odbc-database",
   "version": "1.0.0",
   "description": "n8n node for connecting to databases via ODBC (IBM i, DB2, etc)",
   "keywords": [
