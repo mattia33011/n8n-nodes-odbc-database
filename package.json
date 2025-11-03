@@ -1,0 +1,59 @@
+{
+  "name": "n8n-nodes-odbc-database",
+  "version": "1.0.0",
+  "description": "n8n node for connecting to databases via ODBC (IBM i, DB2, etc)",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "odbc",
+    "database",
+    "ibm-i",
+    "db2",
+    "as400"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mattia33011/n8n-nodes-odbc-database#",
+  "author": {
+    "name": "Mattia iaria",
+    "email": "mattia.iaria30@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattia33011/n8n-nodes-odbc-database.git"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/OdbcDatabaseApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/OdbcDatabase/OdbcDatabase.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-n8n-nodes-base": "^1.0.0",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "^1.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "~5.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "odbc": "^2.4.8"
+  }
+}
