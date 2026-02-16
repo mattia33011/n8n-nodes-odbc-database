@@ -37,7 +37,8 @@
       "dist/credentials/OdbcDatabaseApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/OdbcDatabase/OdbcDatabase.node.js"
+      "dist/nodes/OdbcDatabase/OdbcDatabase.node.js",
+      "dist/nodes/As400Command/As400Command.node.js"
     ]
   },
   "devDependencies": {
